@@ -1,0 +1,96 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.1 Elderberries(part5)</Name>
+
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<If condition="(not Me.IsInTown)">
+<UseTownPortal questId="1" />
+</If>
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="40" />
+
+<!-- Oasis -->
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="5" />
+<WaitTimer WaitTime="1000" />
+<MoveTo questId="1" x="4219.11" y="4387.877" z="94.4203" pathPrecision="1" />
+<MoveTo questId="1" x="4161.401" y="4504.677" z="100.0547" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="4111.484" y="4595.857" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="4187.239" y="4672.199" z="97.34127" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="4111.484" y="4595.857" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="4053.743" y="4632.044" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3986.753" y="4635.704" z="100.1119" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="4075.82" y="4490.384" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3982.22" y="4462.765" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3871.081" y="4608.379" z="100.0591" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3834.424" y="4520.345" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3839.374" y="4401.773" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3886.49" y="4220.695" z="100.0927" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3850.326" y="4198.906" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3876.997" y="4055.105" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3812.989" y="3987.49" z="100.0195" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3745.001" y="4085.805" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3547.484" y="4021.385" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3599.676" y="4161.26" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3597.224" y="4384.44" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3682.896" y="4464.901" z="97.44301" pathPrecision="1" unsafeRandomDistance="5" />
+
+<!-- Dahlgur Oasis / Old Fisherman's Cellar -->
+<If condition="ActorExistsAt(175467, 3657.033, 4483.086, 103.8032, 15)">
+	<MoveTo questId="1" x="3663.943" y="4481.376" z="102.3025" pathPrecision="1" unsafeRandomDistance="5" />
+	<UseObject questId="1" stepId="1" actorId="175467" isPortal="True" destinationWorldId="136932" x="3657.033" y="4483.086" z="103.8032" />
+</If>
+<If condition="Zeta.ZetaDia.CurrentWorldId==136932">
+	<MoveTo questId="1" x="481.4187" y="486.2523" z="0.1000017" pathPrecision="1" unsafeRandomDistance="5" />
+	<MoveTo questId="1" x="515.1323" y="561.3995" z="0.1000017" pathPrecision="1" unsafeRandomDistance="5" />
+	<MoveTo questId="1" x="446.4448" y="539.006" z="0.1000038" pathPrecision="1" unsafeRandomDistance="5" />
+	<MoveTo questId="1" x="485.8375" y="405.6305" z="0.1000038" pathPrecision="1" unsafeRandomDistance="5" />
+	<UseObject questId="1" stepId="1" actorId="176007" isPortal="True" destinationWorldId="70885" x="484.9961" y="389.2942" z="5.146899" />
+</If>
+<MoveTo questId="1" x="3689.919" y="4460.191" z="97.59747" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3658.434" y="4364.588" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3597.224" y="4384.44" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+
+
+
+
+
+<MoveTo questId="1" x="3448.229" y="4414.834" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3389.899" y="4364.895" z="100.0591" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3235.141" y="4182.993" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3124.169" y="4123.921" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3081.957" y="4034.642" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2992.25" y="4197.32" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3202.938" y="4453.584" z="98.65264" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3151.411" y="4529.596" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3169.398" y="4609.085" z="98.00623" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3231.027" y="4674.403" z="97.34128" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="3109.926" y="4551.934" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2874.354" y="4573.568" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2714.692" y="4474.128" z="101.6243" pathPrecision="1" unsafeRandomDistance="5"/>
+<!-- Dahlgur Oasis / Swampy Cellar-->
+<If condition="ActorExistsAt(175467, 2697.736, 4477.978, 103.7704, 15)">
+	<UseObject questId="1" stepId="1" actorId="175467" isPortal="True" destinationWorldId="162790" x="2697.736" y="4477.978" z="103.7704" />
+</If>
+<If condition="Zeta.ZetaDia.CurrentWorldId==162790">
+	<MoveTo questId="1" x="519.9016" y="563.4224" z="0.1" pathPrecision="1" unsafeRandomDistance="5"/>
+	<MoveTo questId="1" x="444.5514" y="553.6824" z="0.1000038" pathPrecision="1" unsafeRandomDistance="5"/>
+	<MoveTo questId="1" x="485.2735" y="400.3043" z="0.3205071" pathPrecision="1" unsafeRandomDistance="5"/>
+	
+	<UseObject questId="1" stepId="1" actorId="176007" isPortal="True" destinationWorldId="70885" x="484.9961" y="389.2942" z="5.146899" />
+</If>
+
+<MoveTo questId="1" x="2778.003" y="4398.69" z="100.1" pathPrecision="1" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2791.203" y="4166.806" z="108.6315" pathPrecision="1" unsafeRandomDistance="5" />
+
+<UseTownPortal questId="1" />
+
+
+	<If condition="Me.IsInTown==False">   
+		<UseTownPortal questId="1" />       
+    </If>
+  
+<Continue profile="Elderberries_DesolateSands.xml"/>
+  
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>

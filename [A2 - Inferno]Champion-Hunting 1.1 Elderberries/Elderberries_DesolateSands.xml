@@ -1,0 +1,93 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.1 Elderberries(part6)</Name>
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="50" />
+
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="7" />
+<WaitTimer WaitTime="1000" />
+<MoveTo questId="1" x="1715.201" y="4059.908" z="52.66872" pathPrecision="1" />
+<MoveTo questId="1" x="1690.365" y="4071.92" z="60.84613"  pathPrecision="1" />
+<MoveTo questId="1" x="1560.429" y="4076.165" z="63.48525" pathPrecision="1" />
+<MoveTo questId="1" x="1520.164" y="4012.315" z="80.1051" pathPrecision="1" />
+<MoveTo questId="1" x="1488.88" y="4092.023" z="90.8534" pathPrecision="1" />
+<MoveTo questId="1" x="1420.755" y="4012.192" z="110.2273" pathPrecision="1" />
+<MoveTo questId="1" x="1294.16" y="3937.343" z="110.2" pathPrecision="1" />
+<MoveTo questId="1" x="1256.521" y="3929.539" z="110.1001" pathPrecision="1" name ="first spawn check"/>
+<MoveTo questId="1" x="1253.44" y="3850.904" z="110.1"  pathPrecision="1" />
+<MoveTo questId="1" x="1128.625" y="3784.432" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="1083.34" y="3700.603" z="110.11" pathPrecision="1" />
+<MoveTo questId="1" x="1078.152" y="3698.785" z="110.11"  pathPrecision="9" name="2nd spawn check" />
+<MoveTo questId="1" x="986.7629" y="3646.21" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="841.3512" y="3635.651" z="110.1"  pathPrecision="10" name="3rd spawn check" />
+<MoveTo questId="1" x="718.5175" y="3554.604" z="110.0438" pathPrecision="1" />
+<MoveTo questId="1" x="614.5844" y="3771.281" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="478.2828" y="3666.187" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="447.8265" y="3561.69" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="274.9613" y="3572.342" z="110.1" pathPrecision="1" name="gangway"/>
+<MoveTo questId="1" x="186.99" y="3699" z="110.1039"  pathPrecision="5" name ="4th spawn check" />
+<MoveTo questId="1" x="158.1445" y="3698.329" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="196.8874" y="3846.79" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="395.314" y="3867.595" z="110.1" pathPrecision="1" name="5th spawn check" />
+<MoveTo questId="1" x="395.314" y="3867.595" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="612.0736" y="3935.004" z="110.11" pathPrecision="5" name="6th spawn check"/>
+<MoveTo questId="1" x="703.0422" y="4086.459" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="812.2626" y="4017.772" z="109.9784" pathPrecision="1" />
+<MoveTo questId="1" x="820.1481" y="3902.452" z="109.9565" pathPrecision="1" />
+<MoveTo questId="1" x="879.0249" y="3929.893" z="110.11" pathPrecision="1" name="final spawn check"/>
+<MoveTo questId="1" x="980.0387" y="3971.514" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="980.7545" y="4098.234" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1097.416" y="4086.497" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1198.618" y="4064.725" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1420.755" y="4012.192" z="110.2273" pathPrecision="1" />
+</If>
+
+<If condition="ActorExistsAt(6442, 1719.754, 4030.165, 55.20013, 50) and ZetaDia.CurrentWorldId == 70885">
+<MoveTo questId="1" x="1715.201" y="4059.908" z="52.66872" pathPrecision="1" />
+<MoveTo questId="1" x="1690.365" y="4071.92" z="60.84613"  pathPrecision="1" />
+<MoveTo questId="1" x="1560.429" y="4076.165" z="63.48525" pathPrecision="1" />
+<MoveTo questId="1" x="1520.164" y="4012.315" z="80.1051" pathPrecision="1" />
+<MoveTo questId="1" x="1488.88" y="4092.023" z="90.8534" pathPrecision="1" />
+<MoveTo questId="1" x="1420.755" y="4012.192" z="110.2273" pathPrecision="1" />
+<MoveTo questId="1" x="1294.16" y="3937.343" z="110.2" pathPrecision="1" />
+<MoveTo questId="1" x="1256.521" y="3929.539" z="110.1001" pathPrecision="1" name ="first spawn check"/>
+<MoveTo questId="1" x="1253.44" y="3850.904" z="110.1"  pathPrecision="1" />
+<MoveTo questId="1" x="1128.625" y="3784.432" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="1083.34" y="3700.603" z="110.11" pathPrecision="1" />
+<MoveTo questId="1" x="1074.333" y="3690.15" z="110.1032"  pathPrecision="5" name="2nd spawn check" />
+<MoveTo questId="1" x="986.7629" y="3646.21" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="841.3512" y="3635.651" z="110.1"  pathPrecision="10" name="3rd spawn check" />
+<MoveTo questId="1" x="718.5175" y="3554.604" z="110.0438" pathPrecision="1" />
+<MoveTo questId="1" x="614.5844" y="3771.281" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="478.2828" y="3666.187" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="447.8265" y="3561.69" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="274.9613" y="3572.342" z="110.1" pathPrecision="1" name="gangway"/>
+<MoveTo questId="1" x="186.99" y="3699" z="110.1039"  pathPrecision="5" name ="4th spawn check" />
+<MoveTo questId="1" x="158.1445" y="3698.329" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="196.8874" y="3846.79" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="395.314" y="3867.595" z="110.1" pathPrecision="1" name="5th spawn check" />
+<MoveTo questId="1" x="395.314" y="3867.595" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="612.0736" y="3935.004" z="110.11" pathPrecision="5" name="6th spawn check"/>
+<MoveTo questId="1" x="703.0422" y="4086.459" z="110.1" pathPrecision="1" />
+<MoveTo questId="1" x="812.2626" y="4017.772" z="109.9784" pathPrecision="1" />
+<MoveTo questId="1" x="820.1481" y="3902.452" z="109.9565" pathPrecision="1" />
+<MoveTo questId="1" x="879.0249" y="3929.893" z="110.11" pathPrecision="1" name="final spawn check"/>
+<MoveTo questId="1" x="980.0387" y="3971.514" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="980.7545" y="4098.234" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1097.416" y="4086.497" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1198.618" y="4064.725" z="110.1" pathPrecision="10" />
+<MoveTo questId="1" x="1420.755" y="4012.192" z="110.2273" pathPrecision="1" />
+</If>
+
+
+	<If condition="Me.IsInTown==False">   
+		<UseTownPortal questId="1" />       
+    </If>
+
+	<Continue profile="Elderberries_HowlingPres.xml"/>
+
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>

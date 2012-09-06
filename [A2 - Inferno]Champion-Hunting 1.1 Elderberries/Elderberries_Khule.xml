@@ -1,0 +1,36 @@
+<Profile>
+	<Name>[A2 - Inferno] Champion-Hunting 1.1 Elderberries(part8)</Name>
+	<KillMonsters>True</KillMonsters>
+	<PickupLoot>True</PickupLoot>
+	<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+	<Order>
+		<ToggleTargeting questId="1" combat="False" looting="False" lootRadius="0" killRadius="0" />
+		<While condition="IsActiveQuest(57337) and IsActiveQuestStep(26)">
+			<MoveTo questId="1" x="324.155" y="291.7061" z="1.64563" pathPrecision="15" />
+		    <UseWaypoint questId="1" waypointNumber="9" actorId="6442" x="324.155" y="291.7061" z="1.64563" />
+			<MoveTo questId="1" x="769.7361" y="288.3888" z="0.1000029" pathPrecision="15" /> 
+		    <MoveTo questId="1" x="691.2022" y="274.8302" z="-12.31048" pathPrecision="15" />
+		    <MoveTo questId="1" x="652.1691" y="301.7794" z="-12.00242" pathPrecision="15" />
+		    <UseObject questId="1" stepId="26" actorId="159581" isPortal="True" destinationWorldId="60193" x="652.0185" y="279.8338" z="-12.42771" /> 
+		</While>
+		<While condition="IsActiveQuest(57337) and IsActiveQuestStep(27)">
+			<MoveTo questId="1" pathPrecision="15" x="93.75659" y="59.96487" z="0.1000037"/>
+			<WaitTimer questId="1" waitTime="2000"/>
+			<SkipCutscene questId="1" />
+			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="30" killRadius="60" />
+		</While>
+		<While condition="IsActiveQuest(57337) and IsActiveQuestStep(4) and (not ActorExistsAt(159581, 652.0185, 279.8338, -12.42771, 15))">
+			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="30" killRadius="60" />
+			<WaitTimer questId="1" waitTime="2000" />
+			<MoveTo questId="1" pathPrecision="15" x="64.69389" y="74.0303" z="0.1000031" />
+		</While>
+    <WaitTimer questId="1" waitTime="2000" />
+    <MoveTo questId="1" pathPrecision="15" x="95.97552" y="56.55413" z="0.1000037" />
+		<If condition="Me.IsInTown==False">   
+      <UseTownPortal questId="1" />       
+    </If>
+    <If condition="Me.IsInTown">
+      <LeaveGame reason="Act 2 run complete!" />
+    </If>
+	</Order>
+</Profile>

@@ -1,0 +1,77 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.1 Elderberries(part7)</Name>
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="50" />
+
+
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="2" />
+<WaitTimer WaitTime="500" />
+<MoveTo questId="1" x="2033.937" y="1051.028" z="170.4123" pathPrecision="10" />
+<MoveTo questId="1" x="2179.821" y="1055.57" z="171.5725" pathPrecision="10" />
+<MoveTo questId="1" x="2176.592" y="1130.442" z="187.517" pathPrecision="10" />
+<MoveTo questId="1" x="2139.546" y="1202.264" z="209.7719" pathPrecision="10" />
+<MoveTo questId="1" x="2215.876" y="1204.183" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2330.984" y="1039.455" z="207.6819" pathPrecision="10" />
+<MoveTo questId="1" x="2424.865" y="1062.105" z="207.4783" pathPrecision="10" />
+<MoveTo questId="1" x="2317.813" y="1205.307" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2427.358" y="1258.321" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2493.216" y="1200.156" z="207.4772" pathPrecision="10" />
+<MoveTo questId="1" x="2538.318" y="1318.954" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2514.372" y="1411.831" z="207.4763" pathPrecision="10" />
+<MoveTo questId="1" x="2259.514" y="1448.932" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2214.816" y="1614.029" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2072.947" y="1702.083" z="207.2312" pathPrecision="10" />
+<MoveTo questId="1" x="1955.511" y="1595.984" z="207.2562" pathPrecision="10" />
+<MoveTo questId="1" x="2074.029" y="1456.919" z="207.6511" pathPrecision="10" />
+</If>
+
+<If condition="ActorExistsAt(6442, 1982.983, 1000.089, 171.7382, 50) and ZetaDia.CurrentWorldId == 70885">
+<MoveTo questId="1" x="2033.937" y="1051.028" z="170.4123" pathPrecision="10" />
+<MoveTo questId="1" x="2179.821" y="1055.57" z="171.5725" pathPrecision="10" />
+<MoveTo questId="1" x="2176.592" y="1130.442" z="187.517" pathPrecision="10" />
+<MoveTo questId="1" x="2139.546" y="1202.264" z="209.7719" pathPrecision="10" />
+<MoveTo questId="1" x="2215.876" y="1204.183" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2330.984" y="1039.455" z="207.6819" pathPrecision="10" />
+<MoveTo questId="1" x="2424.865" y="1062.105" z="207.4783" pathPrecision="10" />
+<MoveTo questId="1" x="2317.813" y="1205.307" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2427.358" y="1258.321" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2493.216" y="1200.156" z="207.4772" pathPrecision="10" />
+<MoveTo questId="1" x="2538.318" y="1318.954" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2514.372" y="1411.831" z="207.4763" pathPrecision="10" />
+<MoveTo questId="1" x="2259.514" y="1448.932" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2214.816" y="1614.029" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2072.947" y="1702.083" z="207.2312" pathPrecision="10" />
+<MoveTo questId="1" x="1955.511" y="1595.984" z="207.2562" pathPrecision="10" />
+<MoveTo questId="1" x="2074.029" y="1456.919" z="207.6511" pathPrecision="10" />
+</If>
+
+<If condition="ActorExistsAt(3795, 2184.041, 1074.998, 173.7045, 50) and ZetaDia.CurrentWorldId == 70885">
+<MoveTo questId="1" x="2176.592" y="1130.442" z="187.517" pathPrecision="10" />
+<MoveTo questId="1" x="2139.546" y="1202.264" z="209.7719" pathPrecision="10" />
+<MoveTo questId="1" x="2215.876" y="1204.183" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2330.984" y="1039.455" z="207.6819" pathPrecision="10" />
+<MoveTo questId="1" x="2424.865" y="1062.105" z="207.4783" pathPrecision="10" />
+<MoveTo questId="1" x="2317.813" y="1205.307" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2427.358" y="1258.321" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2493.216" y="1200.156" z="207.4772" pathPrecision="10" />
+<MoveTo questId="1" x="2538.318" y="1318.954" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2514.372" y="1411.831" z="207.4763" pathPrecision="10" />
+<MoveTo questId="1" x="2259.514" y="1448.932" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2214.816" y="1614.029" z="207.4762" pathPrecision="10" />
+<MoveTo questId="1" x="2072.947" y="1702.083" z="207.2312" pathPrecision="10" />
+<MoveTo questId="1" x="1955.511" y="1595.984" z="207.2562" pathPrecision="10" />
+<MoveTo questId="1" x="2074.029" y="1456.919" z="207.6511" pathPrecision="10" />
+</If>
+
+<If condition="Me.IsInTown==False">   
+<UseTownPortal questId="1" />       
+ </If>
+
+
+<LeaveGame reason="And your mother smells of elderberries" />
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>
