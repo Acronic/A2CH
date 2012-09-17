@@ -1,0 +1,46 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.22 Elderberries(part1a)</Name>
+<!-- Mine -->
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<!-- set the kill/loot radius -->
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="60" killRadius="50" />
+
+<!-- port to zone if we are in Town -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="2" />
+<WaitTimer WaitTime="200" />
+</If>
+
+<!-- whole profile set -->
+<MoveTo questId="1" x="2021.518" y="1052.173" z="171.3882" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2021.518" y="1052.173" z="171.3882" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2020.404" y="947.2237" z="169.7564" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="2043.287" y="868.3506" z="169.8934" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1978.844" y="820.3332" z="170.0131" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1957.915" y="887.5001" z="169.7564" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1899.751" y="956.6108" z="169.7564" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1849.302" y="894.4056" z="169.7564" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1831.69" y="850.9122" z="169.8358"  pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1765.433" y="1001.145" z="169.7564" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1790.756" y="1052.861" z="172.0215" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1777.478" y="1103.961" z="169.7565" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1881.395" y="1100.714" z="170.9336" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1769.867" y="1148.974" z="169.7793" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1770.994" y="1209.792" z="170.1794" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1770.994" y="1209.792" z="170.1794" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1923.252" y="1163.111" z="169.9847" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1876.806" y="1308.173" z="170.1794" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1805.771" y="1376.029" z="170.1795" pathPrecision="10" unsafeRandomDistance="5" />
+   
+<!-- Go back to Town -->
+	<UseTownPortal questId="1" />
+	<WaitTimer WaitTime="2500" />	
+    
+<!-- switch profiles using A version -->
+	<Continue profile="Elderberries_Alcarnus.xml" />
+	
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>

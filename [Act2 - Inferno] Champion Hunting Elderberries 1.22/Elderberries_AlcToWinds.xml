@@ -1,0 +1,41 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.22 Elderberries(part3a)</Name>
+<!-- Road to Alcarnus to  Stinging Winds-->
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<!-- set the kill/loot radius -->
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="50" />    
+
+<!-- port to zone if we are in Town -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="4" />
+<WaitTimer WaitTime="200" />
+</If>
+
+<!-- whole profile set -->
+<MoveTo questId="1" x="1322.646" y="1058.84" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1206.217" y="946.6221" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1193.333" y="754.5875" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1349.15" y="723.4863" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1175.79" y="779.7007" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1243.36" y="576.0153" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1349.058" y="526.2614" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1389.499" y="510.5251" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1420.471" y="551.3657" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1405.273" y="743.11" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1488.998" y="862.1241" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="1307.298" y="1056.135" z="174.5399" pathPrecision="10" unsafeRandomDistance="1" />
+
+<!-- Go back to Town to get ready for next profile -->
+   
+	<UseTownPortal questId="1" />       
+	<WaitTimer WaitTime="2500" />
+
+<!-- switch profiles using random versions -->
+	<Continue profile="Elderberries_KhasimToWinds.xml" profileB="Elderberries_KhasimToWindsB.xml"/>
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>
+
+
