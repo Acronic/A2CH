@@ -19,6 +19,8 @@
 <MoveTo questId="1" x="1446.537" y="943.7289" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1558.975" y="811.0388" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1456.661" y="700.2819" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1451.498" y="815.7075" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1498.503" y="738.9039" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1389.622" y="606.5721" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1404.302" y="512.8912" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1280.283" y="550.9733" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
@@ -26,6 +28,7 @@
 <MoveTo questId="1" x="1339.32" y="688.5994" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1190.8" y="748.1293" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1151.136" y="866.9675" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1185.793" y="1002.127" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1315.172" y="1036.831" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 
 <!-- continue from here if we're at the checkpoint -->
@@ -35,6 +38,7 @@
 <MoveTo questId="1" x="1339.32" y="688.5994" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1190.8" y="748.1293" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1151.136" y="866.9675" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
+<MoveTo questId="1" x="1185.793" y="1002.127" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 <MoveTo questId="1" x="1315.172" y="1036.831" z="174.5399" pathPrecision="10" unsafeRandomDistance="5" />
 </If> 
 
