@@ -17,6 +17,17 @@
 		    <UseObject questId="1" stepId="26" actorId="159581" isPortal="True" destinationWorldId="60193" x="652.0185" y="279.8338" z="-12.42771" /> 
 		</While>
 		
+			<!-- Loop to port to Boss and rengage if we die during attempt -->
+				<While condition="IsActiveQuest(57337) and IsActiveQuestStep(4) and (ActorExistsAt(159581, 652.0185, 279.8338, -12.42771, 15))">
+			<MoveTo questId="1" x="652.1691" y="301.7794" z="-12.00242" pathPrecision="15" />
+		    <UseObject questId="1" stepId="26" actorId="159581" isPortal="True" destinationWorldId="60193" x="652.0185" y="279.8338" z="-12.42771" />
+	
+			<MoveTo questId="1" pathPrecision="15" x="93.75659" y="59.96487" z="0.1000037"/>
+			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="30" killRadius="60" />
+			<WaitTimer questId="1" waitTime="2000" />
+			<SkipCutscene questId="1" />
+		</While>
+		
 		<!-- skips scene and approaches Kulle -->
 		<While condition="IsActiveQuest(57337) and IsActiveQuestStep(27)">
 			<MoveTo questId="1" pathPrecision="15" x="93.75659" y="59.96487" z="0.1000037"/>
@@ -29,9 +40,14 @@
 		<While condition="IsActiveQuest(57337) and IsActiveQuestStep(4) and (not ActorExistsAt(159581, 652.0185, 279.8338, -12.42771, 15))">
 			<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="30" killRadius="60" />
 			<WaitTimer questId="1" waitTime="2000" />
+			<MoveTo questId="1" pathPrecision="15" x="161.5635" y="48.76737" z="0.1000029" />
+			<MoveTo questId="1" pathPrecision="15" x="98.71568" y="60.31295" z="0.100004" />
+			<WaitTimer questId="1" waitTime="2000"/>
+			<SkipCutscene questId="1" />
 			<MoveTo questId="1" pathPrecision="15" x="64.69389" y="74.0303" z="0.1000031" />
 		</While>
 		
+
     <WaitTimer questId="1" waitTime="2000" />
 	
 	<!-- switch profiles  -->
