@@ -1,0 +1,208 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.22 Elderberries(part5b)</Name>
+
+
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+
+<!-- set the kill/loot radius -->
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="50" killRadius="40" />
+
+<!-- GOTO Oasis -->
+<If condition="Me.IsInTown==True">   
+	<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="5" />
+<WaitTimer WaitTime="200" />
+</If>
+
+<!-- profile starts here -->
+
+<MoveTo questId="1" x="4225.771" y="4402.414" z="94.58954" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4217.627" y="4474.988" z="97.13789" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4154.598" y="4523.951" z="100.1446" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4108.362" y="4593.289" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4195.444" y="4677.995" z="97.34128" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4108.362" y="4593.289" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4033.307" y="4476.047" z="100.1988" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3973.628" y="4464.061" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3936.378" y="4523.423" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="4001.814" y="4624.985" z="99.20027" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3839.022" y="4617.792" z="100.0954" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3828.701" y="4605.117" z="100.0882" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3831.642" y="4458.292" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3750.941" y="4414.085" z="100.2" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3683.871" y="4471.221" z="97.44301" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!-- 	Dahlgur Oasis / Old Fisherman's Cellar 
+		This code detects whether the OFC has spawned and enters it if so  -->
+<If condition="ActorExistsAt(175467, 3657.033, 4483.086, 103.8032, 15)">
+	<MoveTo questId="1" x="3663.943" y="4481.376" z="102.3025" pathPrecision="3" unsafeRandomDistance="1" />
+	<UseObject questId="1" stepId="1" actorId="175467" isPortal="True" destinationWorldId="136932" x="3657.033" y="4483.086" z="103.8032" />
+</If>
+
+ <!-- this code runs the cellar if it's inside it -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==136932">
+	<MoveTo questId="1" x="481.4187" y="486.2523" z="0.1000017" pathPrecision="3" unsafeRandomDistance="1" />
+	<MoveTo questId="1" x="515.1323" y="561.3995" z="0.1000017" pathPrecision="3" unsafeRandomDistance="1" />
+	<MoveTo questId="1" x="446.4448" y="539.006" z="0.1000038" pathPrecision="3" unsafeRandomDistance="1" />
+	<MoveTo questId="1" x="485.8375" y="405.6305" z="0.1000038" pathPrecision="3" unsafeRandomDistance="1" />
+	<UseObject questId="1" stepId="1" actorId="176007" isPortal="True" destinationWorldId="70885" x="484.9961" y="389.2942" z="5.146899" />
+</If> 
+
+<!-- continues run after cellar finished, or if no cellar has spawned here -->
+<MoveTo questId="1" x="3698.92" y="4447.24" z="98.57202" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3760.634" y="4378.208" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3733.628" y="4317.771" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3629.407" y="4312.877" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!--check for Forgotten ruins entrance
+	<If condition="ZetaDia.CurrentWorldId==70885 and ActorExistsAt(185067, 3557.5, 4267, 104.095, 10)" >
+	<MoveTo questId="1" x="3586.433" y="4273.75" z="100.1" pathPrecision="1" />
+	<MoveTo questId="1" x="3557.5" y="4267" z="104.095" pathPrecision="1" />
+	<UseObject questId="1" actorId="185067" x="3557.5" y="4267" z="104.095" isPortal="True" destinationWorldId="61631" />
+	<WaitTimer WaitTime="1000" />
+	</If>-->
+		<!-- run  FR when found 
+
+		<If condition="Zeta.ZetaDia.CurrentWorldId == 61631" >
+		<ExploreArea boxTolerance="0.55" boxSize="28" until="ObjectFound" actorId="135248" />
+		<WaitTimer WaitTime="1000" />
+		<UseObject questid="1" actorId="135248" />
+		</If>-->
+
+
+<MoveTo questId="1" x="3587.438" y="4221.764" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3487.08" y="4143.005" z="100.1" pathPrecision="3" unsafeRandomDistance="1" /> 
+<MoveTo questId="1" x="3545.959" y="4033.181" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3541.897" y="3997.416" z="100.1988" pathPrecision="3" unsafeRandomDistance="1" /> 
+
+<!--check for Forgotten ruins entrance
+	<If condition="ZetaDia.CurrentWorldId==70885 and ActorExistsAt(185067, 3517, 3982.5, 103.2285, 10)" >
+	<MoveTo questId="1" x="3517" y="3982.5" z="103.2285"   pathPrecision="1" />
+	<UseObject questId="1" actorId="185067" x="3517" y="3982.5" z="103.2285" isPortal="True" destinationWorldId="61631" />
+	<WaitTimer WaitTime="1000" />
+	</If>-->
+		<!-- run  FR when found 
+
+		<If condition="Zeta.ZetaDia.CurrentWorldId == 61631" >
+		<ExploreArea boxTolerance="0.55" boxSize="28" until="ObjectFound" actorId="135248" />
+		<WaitTimer WaitTime="1000" />
+		<UseObject questid="1" actorId="135248" />
+		</If>-->
+ 
+  
+<MoveTo questId="1" x="3598.412" y="4030.274" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3743.585" y="4079.417" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3820.177" y="3984.434" z="100.153" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3838.624" y="4135.998" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3827.48" y="4258.017" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3837.303" y="4329.914" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3676.948" y="4329.587" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3493.475" y="4317.505" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3493.475" y="4317.505" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!--check for Forgotten ruins entrance
+	<If condition="ZetaDia.CurrentWorldId==70885 and ActorExistsAt(185067, 3472.5, 4367, 104.095, 10)" >
+	<MoveTo questId="1" x="3472" y="4367.5" z="103.2285"  pathPrecision="1" />
+	<UseObject questId="1" actorId="185067" x="3472.5" y="4367" z="104.095" isPortal="True" destinationWorldId="61631" />
+	<WaitTimer WaitTime="1000" />
+	</If> -->
+		<!-- run  FR when found 
+
+		<If condition="Zeta.ZetaDia.CurrentWorldId == 61631" >
+		<ExploreArea boxTolerance="0.55" boxSize="28" until="ObjectFound" actorId="135248" />
+		<WaitTimer WaitTime="1000" />
+		<UseObject questid="1" actorId="135248" />
+		</If>-->
+
+<MoveTo questId="1" x="3470.07" y="4308.3" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3365.261" y="4333.059" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3275.888" y="4208.143" z="98.06458" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3152.014" y="4144.883" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3072.948" y="3978.756" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3064.91" y="4067.507" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3134.363" y="4157.067" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3131.463" y="4293.821" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3200.932" y="4304.981" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3103.383" y="4548.099" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3229.601" y="4674.453" z="97.34127" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3138.284" y="4587.903" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />  
+<MoveTo questId="1" x="3106.134" y="4632.646" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2963.335" y="4657.188" z="99.85443" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2792.088" y="4527.8" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2867.616" y="4428.405" z="100.1484" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2907.051" y="4321.385" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="3033.023" y="4249.933" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!--check for Forgotten ruins entrance
+	<If condition="ZetaDia.CurrentWorldId==70885 and ActorExistsAt(185067, 2982, 4262.5, 104.095, 10)" >
+	<MoveTo questId="1" x="3010.739" y="4260.701" z="100.1" pathPrecision="1" />
+	<MoveTo questId="1" x="2982" y="4262.5" z="103.2285" pathPrecision="1" />
+	<UseObject questId="1" actorId="185067" x="2982.5" y="4262" z="104.095" isPortal="True" destinationWorldId="61631" />
+	<WaitTimer WaitTime="1000" />
+	</If> -->
+		<!-- run  FR when found 
+
+		<If condition="Zeta.ZetaDia.CurrentWorldId == 61631" >
+		<ExploreArea boxTolerance="0.55" boxSize="28" until="ObjectFound" actorId="135248" />
+		<WaitTimer WaitTime="1000" />
+		<UseObject questid="1" actorId="135248" />
+		</If>-->
+<MoveTo questId="1" x="2940.861" y="4224.197" z="100.1068" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2960.211" y="4166.911" z="97.60065" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2860.446" y="4345.52" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!--check for Forgotten ruins entrance
+	<If condition="ZetaDia.CurrentWorldId==70885 and ActorExistsAt(185067, 2842.5, 4397, 104.095, 10)" >
+	<MoveTo questId="1" x="2868.178" y="4397.903" z="100.172" pathPrecision="1" />
+	<MoveTo questId="1" x="2842" y="4397.5" z="103.2285"  pathPrecision="1" />
+	<UseObject questId="1" actorId="185067" x="2842.5" y="4397" z="104.095" isPortal="True" destinationWorldId="61631" />
+	<WaitTimer WaitTime="1000" />
+	</If> -->
+		<!-- run  FR when found 
+
+		<If condition="Zeta.ZetaDia.CurrentWorldId == 61631" >
+		<ExploreArea boxTolerance="0.55" boxSize="28" until="ObjectFound" actorId="135248" />
+		<WaitTimer WaitTime="1000" />
+		<UseObject questid="1" actorId="135248" />
+		</If>-->
+
+<MoveTo questId="1" x="2789.342" y="4398.31" z="100.1002" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2782.527" y="4460.913" z="97.66301" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2720.793" y="4463.372" z="99.89315" pathPrecision="3" unsafeRandomDistance="1"/>
+
+<!-- 	Dahlgur Oasis / Swampy Cellar
+		This code detects whether Swampy Cellar has spawned and enters it if so -->
+<If condition="ActorExistsAt(175467, 2697.736, 4477.978, 103.7704, 15)">
+	<UseObject questId="1" stepId="1" actorId="175467" isPortal="True" destinationWorldId="162790" x="2697.736" y="4477.978" z="103.7704" />
+</If>
+
+<!-- runs the cellar once inside -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==162790"> 
+	<MoveTo questId="1" x="483.6547" y="490.2785" z="0.1000018" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="448.0976" y="488.0579" z="0.1000038" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="445.2358" y="557.517" z="0.1000038" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="521.2152" y="564.1133" z="0.1" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="514.7385" y="492.386" z="0.1000034" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="485.5576" y="471.3279" z="0.6237999" pathPrecision="3" unsafeRandomDistance="1"/>
+	<MoveTo questId="1" x="486.4052" y="394.8243" z="2.707702" pathPrecision="3" unsafeRandomDistance="1"/>
+	
+	<UseObject questId="1" stepId="1" actorId="176007" isPortal="True" destinationWorldId="70885" x="484.9961" y="389.2942" z="5.146899" />
+</If>
+
+<!-- continues run after cellar has finished, or if no cellar spawned this time -->
+<MoveTo questId="1" x="2778.003" y="4398.69" z="100.1" pathPrecision="3" unsafeRandomDistance="1" />
+<MoveTo questId="1" x="2792.877" y="4212.372" z="100.1467" pathPrecision="3" unsafeRandomDistance="1" />
+
+<!-- Go back to Town to get ready for next profile -->
+	<If condition="Me.IsInTown==False">   
+		<UseTownPortal questId="1" />
+		<WaitTimer WaitTime="2500" />
+    </If>
+  
+<!-- switch profiles -->
+<Continue profile="Elderberries_DesolateSands.xml"/>
+  
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>

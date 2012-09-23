@@ -30,8 +30,8 @@
 		<UseTownPortal questId="1" />
 		<WaitTimer WaitTime="2500" />
  
-<!-- switch profiles --> 
-	<Continue profile="Elderberries_OasisB.xml"/>
+<!-- switch profiles using random versions --> 
+	<Continue profile="Elderberries_OasisB.xml" />
 	
 </Order>
 <KillMonsters>True</KillMonsters>
