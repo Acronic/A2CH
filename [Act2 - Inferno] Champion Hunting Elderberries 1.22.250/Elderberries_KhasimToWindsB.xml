@@ -1,0 +1,41 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.22 Elderberries(part4b)</Name>
+<!-- Khasim Outpost to  Stinging Winds-->
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<!-- set the kill/loot radius -->
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="80" killRadius="50" />
+
+<!-- port to zone if we are in Town -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="3" />
+<WaitTimer WaitTime="200" />
+</If>
+
+<!-- whole profile set -->
+<MoveTo questId="1" x="1507.656" y="417.6726" z="158.8059" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1502.732" y="521.0294" z="158.8245" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1521.08" y="572.4565" z="159.0059"  pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1593.326" y="632.4577" z="158.8059" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1665.433" y="555.409" z="158.8059"  pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1658.587" y="735.6898" z="158.7899" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1879.945" y="719.8698" z="158.8064" pathPrecision="5" unSafeRandomDistance="2" />
+<MoveTo questId="1" x="1933.454" y="466.7144" z="158.8064" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1820.527" y="472.9471" z="158.8064" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1709.274" y="394.4338" z="158.8064" pathPrecision="10" unSafeRandomDistance="5" />
+<MoveTo questId="1" x="1638.927" y="489.6459" z="158.8059" pathPrecision="10" unSafeRandomDistance="5" />
+
+
+<!-- Go back to Town --> 
+		<UseTownPortal questId="1" />
+		<WaitTimer WaitTime="2500" />
+ 
+<!-- switch profiles --> 
+	<Continue profile="Elderberries_Oasis.xml" profileB="Elderberries_OasisB.xml" />
+	
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>
+
+
