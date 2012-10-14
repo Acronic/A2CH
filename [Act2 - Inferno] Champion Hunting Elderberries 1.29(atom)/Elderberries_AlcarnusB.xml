@@ -1,0 +1,52 @@
+<Profile>
+<Name>[A2 - Inferno] Champion-Hunting 1.29 Elderberries(part2b)</Name>
+<GameParams quest="57337" step="26" act="A2" difficulty="Inferno" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+<!-- set the kill/loot radius -->
+<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="60" killRadius="50" />
+
+<!-- port to zone if we are in Town -->
+<If condition="Zeta.ZetaDia.CurrentWorldId==161472">
+<UseWaypoint questId="1" x="324.2319" y="291.6554" z="1.64563" actorId="6442" waypointNumber="4" />
+<WaitTimer questId="1" waitTime="200"/>
+</If>
+
+<!-- whole profile set -->
+<MoveTo questId="1" x="1391.707" y="1199.04" z="185.2858"  pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1405.142" y="1123.143" z="184.4915"  pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1440.43" y="1068.687" z="184.4915" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1524.233" y="1126.93" z="184.4915" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1570.739" y="1200.348" z="184.4915" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1452.287" y="1294.72" z="186.4916" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1530.374" y="1263.641" z="184.4915" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1503.683" y="1282.342" z="184.4916" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1412.113" y="1230.44" z="184.4915" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1433.236" y="1307.788" z="185.3762" pathPrecision="10" unsafeRandomDistance ="5" />
+<!-- crossed bridge-->
+<MoveTo questId="1" x="1191.398" y="1285.754" z="184.5763" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1148.245" y="1415.627" z="184.4916" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1166.323" y="1534.271" z="184.4917" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1073.113" y="1539.347" z="184.5591" pathPrecision="10" unsafeRandomDistance ="5" />
+<MoveTo questId="1" x="1164.356" y="1361.296" z="184.4915"  pathPrecision="10" unsafeRandomDistance ="5" />
+
+<!-- Navpoints to run if we restart profile at the midway checkpoint -->
+<If condition="ActorExistsAt(3795, 1312.25, 1293, 184.7818, 50) and ZetaDia.CurrentWorldId == 70885">
+	<MoveTo questId="1" x="1191.398" y="1285.754" z="184.5763" pathPrecision="10" unsafeRandomDistance ="5" />
+	<MoveTo questId="1" x="1148.245" y="1415.627" z="184.4916" pathPrecision="10" unsafeRandomDistance ="5" />
+	<MoveTo questId="1" x="1166.323" y="1534.271" z="184.4917" pathPrecision="10" unsafeRandomDistance ="5" />
+	<MoveTo questId="1" x="1073.113" y="1539.347" z="184.5591" pathPrecision="10" unsafeRandomDistance ="5" />
+	<MoveTo questId="1" x="1164.356" y="1361.296" z="184.4915"  pathPrecision="10" unsafeRandomDistance ="5" />
+</If>
+
+<!-- Go back to Town to get ready for next profile -->
+	<If condition="Me.IsInTown==False">   
+		<UseTownPortal questId="1" /> 
+		<WaitTimer WaitTime="2500" />
+    </If>
+
+<!-- switch profiles using random versions -->
+	<Continue profile="Elderberries_AlcToWinds.xml, Elderberries_AlcToWindsB.xml" />
+</Order>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+ </Profile>
